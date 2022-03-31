@@ -1,5 +1,5 @@
 {% set name = "jobflow" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jobflow-{{ version }}.tar.gz
-  sha256: d40f4fc11f604895f3bb20acf2027a30e11f60425adb66a85d3677d3a7b29294
+  sha256: 017a97b5b49b2e3412e5d4ce56fceca75e4b276147f0930e39353c40f9013d5a
 
 build:
   number: 0
@@ -44,7 +44,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'jobflow is a library for writing computational workflows.'
+  summary: jobflow is a library for writing computational workflows.
   description: |
     Jobflow is a free, open-source library for writing and executing
     workflows. Complex workflows can be defined using simple python
