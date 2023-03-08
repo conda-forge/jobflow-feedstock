@@ -1,11 +1,11 @@
-About jobflow
-=============
+About jobflow-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jobflow-feedstock/blob/main/LICENSE.txt)
 
 Home: https://materialsproject.github.io/jobflow
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jobflow-feedstock/blob/main/LICENSE.txt)
 
 Summary: jobflow is a library for writing computational workflows.
 
