@@ -1,19 +1,22 @@
-From 5e514db80998d0015f1f0c3ad83fce7c71cc1ba6 Mon Sep 17 00:00:00 2001
-From: Jan Janssen <janssen@lanl.gov>
-Date: Fri, 17 Mar 2023 09:06:27 -0600
-Subject: [PATCH] version set manually
+From 36ff3a1a85e07d1010f72843d9107fa5f99795a7 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Fri, 17 Mar 2023 11:50:39 -0600
+Subject: [PATCH] Update _version.py
 
 ---
  src/jobflow/_version.py | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/src/jobflow/_version.py b/src/jobflow/_version.py
-index 592426c..cf8282c 100644
+index 592426c..d56029e 100644
 --- a/src/jobflow/_version.py
 +++ b/src/jobflow/_version.py
-@@ -4,4 +4,4 @@
-     __version__ = get_distribution("jobflow").version
+@@ -1,7 +1,7 @@
+ from pkg_resources import DistributionNotFound, get_distribution
+ 
+ try:
+-    __version__ = get_distribution("jobflow").version
++    __version__ = "0.1.10"
  except DistributionNotFound:
      # package is not installed
--    __version__ = ""
-+    __version__ = "0.1.10"
+     __version__ = ""
