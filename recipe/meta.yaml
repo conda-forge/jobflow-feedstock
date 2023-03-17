@@ -9,9 +9,11 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jobflow-{{ version }}.tar.gz
   sha256: 6fe33873bc50df82f4f997ce864488fc596f8fbe628d7857bb11b63da6430fd6
+  patches:
+    - version.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -36,6 +38,7 @@ test:
     - jobflow.core
   commands:
     - pip check
+    - pip list | grep jobflow
   requires:
     - pip
 
