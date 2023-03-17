@@ -1,22 +1,20 @@
-From 36ff3a1a85e07d1010f72843d9107fa5f99795a7 Mon Sep 17 00:00:00 2001
+From 1d4f0ad2db00acdc448c27bdabd0eb11cb05ec2f Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Fri, 17 Mar 2023 11:50:39 -0600
-Subject: [PATCH] Update _version.py
+Date: Fri, 17 Mar 2023 11:59:50 -0600
+Subject: [PATCH] Update setup.cfg
 
 ---
- src/jobflow/_version.py | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ setup.cfg | 3 +++
+ 1 file changed, 3 insertions(+)
 
-diff --git a/src/jobflow/_version.py b/src/jobflow/_version.py
-index 592426c..d56029e 100644
---- a/src/jobflow/_version.py
-+++ b/src/jobflow/_version.py
-@@ -1,7 +1,7 @@
- from pkg_resources import DistributionNotFound, get_distribution
- 
- try:
--    __version__ = get_distribution("jobflow").version
-+    __version__ = "0.1.10"
- except DistributionNotFound:
-     # package is not installed
-     __version__ = ""
+diff --git a/setup.cfg b/setup.cfg
+index 8bfd5a1..0bdf3a4 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -1,3 +1,6 @@
++[metadata]
++version = 0.1.10
++
+ [egg_info]
+ tag_build = 
+ tag_date = 0
