@@ -1,5 +1,5 @@
 {% set name = "jobflow" %}
-{% set version = "0.1.18" %}
+{% set version = "0.1.19" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jobflow-{{ version }}.tar.gz
-  sha256: 80554e50b905f5d21bfd2bfa75b3cc23df47ff9fe9dc3392c47524b448333e0f
+  sha256: 1d0420daf50f7a240f2e33e1a14f1701144aa1a24297f4c2a18825410617fd64
   patches:
     - version.patch
 
