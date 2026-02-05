@@ -1,5 +1,5 @@
 {% set name = "jobflow" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jobflow-{{ version }}.tar.gz
-  sha256: 667b3b3ba970164ff9dc0401cef46f3657ca337dca1469c5a498c89635bb96f7
+  sha256: fbfa3c84598e7d69d489c93c95e2c85b4908497131451636fb8369aaaf180b0c
   patches:
     - version.patch
 
