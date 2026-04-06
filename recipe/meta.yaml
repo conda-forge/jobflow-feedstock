@@ -14,7 +14,7 @@ source:
     - version.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,7 +25,7 @@ requirements:
     - setuptools-scm
     - setuptools
   run:
-    - maggma >=0.38.1
+    - maggma >=0.72.0
     - monty >=2021.5.9
     - networkx
     - pydantic
