@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: jobflow
-  version: 0.3.1
+  version: "0.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,12 +10,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jobflow-${{ version }}.tar.gz
-  sha256: fbfa3c84598e7d69d489c93c95e2c85b4908497131451636fb8369aaaf180b0c
+  sha256: fc7c7318f9d5525b857e1671e3275e7eb1a0dd6ec93727706b16449736aa6d40
   patches:
     - version.patch
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
